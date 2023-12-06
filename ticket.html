@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javajam.css">
+    <title>Towson Zoo - Purchase Tickets</title>
+</head>
+
+<body>
+    <header>
+        
+        <h1>Towson Zoo</h1>
+                
+        <nav>
+            <ul>
+                <li>  <a href="index.html">Home</a> &nbsp; 
+                  <a href="menu.html">Animals</a>&nbsp;
+                  <a href="music.html">Visit</a>&nbsp;
+                  <a href="jobs.html">Contact</a>
+            </ul>
+            <div id = "herozoo"></div>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Purchase Tickets</h2>
+        <p>Select the number of tickets you'd like to purchase:</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticket Type</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Family Admission (4 or more)</td>
+                    <td>$50.00</td>
+                </tr>
+                <tr>
+                    <td>Single Admission</td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td>Elderly Admission (65 and up)</td>
+                    <td>$15.00</td>
+                </tr>
+                <tr>
+                    <td>Veteran Admission</td>
+                    <td>$10.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form action="thank.html" method="POST">
+            <label for="selected_tickets">Number of Tickets:</label>
+            <input type="number" id="selected_tickets" name="selected_tickets" min="1" required>
+
+            <label for="payment_info">Payment Information:</label>
+            <input type="text" id="payment_info" name="payment_info" required>
+
+            <input type="submit" value="Complete Purchase">
+        </form>
+    </main>
+
+    <footer><div>
+        16841 York Rd
+        Towson, MD 21286<br>
+        <a id="mobile" href="tel:">410-941-5624</a><span id="desktop">410-941-5624</span><br>
+
+    &copy; 2023 Towson Zoo. All rights reserved.
+    <a href="mailto:Joshua@Cunningham.com">TheTowsonZoo@gmail.com</a></div>
+</footer>
+</body>
+
+</html>
